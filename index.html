@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Aldi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Toggle Dark Mode -->
+<div class="dark-mode-toggle">
+  <label class="switch">
+    <input type="checkbox" id="darkModeToggle" />
+    <span class="slider"></span>
+  </label>
+</div>
+
+
+  <!-- Tentang Saya -->
+  <section class="tentang">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah seorang fresh graduate dari jurusan Teknik Informatika yang memiliki ketertarikan dalam dunia IT Support, jaringan fiber optik, serta sistem POS dan digitalisasi infrastruktur. Saat ini saya terus mengembangkan kemampuan dalam web development, server, dan data center.
+    </p>
+  </section>
+
+  <!-- Profil -->
+  <section class="profil">
+    <img src="foto.jpg" alt="Foto Mohamad Aldi Altary" class="foto-profil" />
+    <h1>Mohamad Aldi Altary</h1>
+    <p>Fresh Graduate Teknik Informatika | IT Support | Jaringan Fiber Optik</p>
+  </section>
+
+  <!-- Layanan -->
+  <section class="layanan-saya">
+    <!-- Keahlian -->
+<section class="skills">
+  <h2>Keahlian Saya</h2>
+  <ul>
+    <li>🔧 IT Support</li>
+    <li>🌐 Jaringan Fiber Optik</li>
+    <li>💻 Web Development (HTML, CSS, JS)</li>
+    <li>🖥️ Infrastruktur Server & Data Center</li>
+  </ul>
+</section>
+
+    <h2>Layanan Saya</h2>
+    <div class="grid-layanan">
+      <div class="layanan">
+        <h3>💡 <span>Konsultasi</span></h3>
+        <p>Konsultasi kebutuhan IT dan jaringan untuk usaha atau rumah Anda.</p>
+      </div>
+      <div class="layanan">
+        <h3>🔧 <span>Instalasi</span></h3>
+        <p>Instalasi jaringan fiber optik dan perangkat IT secara profesional.</p>
+      </div>
+      <div class="layanan">
+        <h3>🛠️ <span>Maintenance</span></h3>
+        <p>Perawatan dan perbaikan sistem POS dan jaringan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section class="portofolio">
+    <h2>Proyek Saya</h2>
+    <div class="grid-portofolio">
+      <div class="item-portofolio">
+        <h3>⛽ Sistem POS SPBU Pertamina (Pinsyst)</h3>
+        <p>
+          Bertanggung jawab dalam perawatan dan troubleshooting sistem POS di SPBU Pertamina yang menggunakan sistem <strong>Pinsyst</strong>, termasuk pengecekan jaringan, backup data transaksi, serta pelaporan error ke pihak pusat.
+        </p>
+      </div>
+      <div class="item-portofolio">
+        <h3>🌐 Digitalisasi Infrastruktur PT Telkom</h3>
+        <p>
+          Mendukung proses digitalisasi dan instalasi jaringan fiber optik untuk kebutuhan internal PT Telkom. Termasuk penarikan kabel FO, konfigurasi perangkat jaringan (ONT/OLT), serta dokumentasi site.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="kontak">
+    <h2>Kontak Saya</h2>
+    <p>Hubungi saya untuk konsultasi atau kerjasama proyek IT.</p>
+    <div class="kontak-info">
+      <a href="cvku.pdf" download class="btn-cv">📄 Download CV</a>
+      <p>📧 Email: <a href="mailto:maldialtary@gmail.com">maldialtary@gmail.com</a></p>
+      <p>📱 WhatsApp: <a href="https://wa.me/6285320484528" target="_blank">+62 853-2048-4528</a></p>
+      <p>🌐 LinkedIn: <a href="https://linkedin.com/in/altary" target="_blank">linkedin.com/in/altary</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mohamad Aldi Altary. All rights reserved.</p>
+  </footer>
+
+  <!-- Script Dark Mode -->
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Cek preferensi sebelumnya
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      body.classList.add("dark-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        body.classList.add("dark-mode");
+        localStorage.setItem("dark-mode", "enabled");
+      } else {
+        body.classList.remove("dark-mode");
+        localStorage.setItem("dark-mode", "disabled");
+      }
+    });
+  </script>
+
+  
+</body>
+</html>
